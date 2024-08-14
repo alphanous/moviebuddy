@@ -12,7 +12,7 @@ login credentials and booking history, is securely stored in MongoDB Compass.
 
 ## Screenshots
 
-[![moviebuddy.png](https://i.postimg.cc/FKNGYSJb/moviebuddy.png)](https://postimg.cc/bZV1Msgd)
+![moviebuddy](https://github.com/user-attachments/assets/92dd9df3-6c61-41ea-9c72-18005f72e169)
 
 
 ## 🔗 Links
