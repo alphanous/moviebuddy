@@ -1,0 +1,150 @@
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+  
+    height: 70px;
+    top: 0;
+    transition: all 0.7s;
+    background-color: #030b17;
+    /* border-bottom: 2px solid #CADCFC; */
+    /* box-shadow: 0px 1px 50px #cadcfc; */
+  }
+  
+  .Logo {
+    font-size: 32px;
+    letter-spacing: 2px;
+    padding-left: 7%;
+    color: #CADCFC;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .NavbarLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 7%;
+    font-weight: 500;
+    font-size: 22px;
+  }
+  
+  .NavbarLinks li {
+    padding: 2px 20px;
+    list-style-type: none;
+    line-height: 30px;
+  }
+  
+  .NavbarLinks .nav-link {
+    color: #CADCFC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 95%;
+    padding: 2px 7px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  .NavbarLinks .nav-link::after {
+    background-color: #CADCFC;
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 5px;
+    bottom: 0;
+    width: 0px;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+  
+  .NavbarLinks .nav-link:hover:after {
+    width: 90%;
+  }
+  .pbtn{
+    padding: 10px 15px 10px 15px;
+    background-color: #CADCFC;
+    color: #030b17;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+  }
+  .Hamburger {
+    display: none;
+  }
+  @media(max-width:800px) {
+    .Navbar {
+      width: 100%;
+    }
+  
+    .NavbarLinks {
+      font-size: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: fixed;
+      inset: 0 0 0 50%;
+      gap: 50px;
+      background-color: #FF9C00;
+      height: 100vh;
+      padding-top: max(20%, 120px);
+      transform: translateX(100%);
+      transition: 0.5s;
+    }
+   .blur .NavbarLinks {
+      background-color: #FF9C00;
+    }
+    .showNavbar {
+      transform: translateX(0);
+    }
+  
+    .Hamburger {
+      display: block;
+      z-index: 2;
+      padding: 5px;
+      padding-right: 7%;
+      cursor: pointer;
+    }
+  
+    .bar {
+      display: block;
+      background-color: #000000;
+      border-radius: 50px;
+      height: 2.5px;
+      width: 30px;
+      margin: 6px;
+      transition: 0.5s;
+    }
+  
+    .barOne {
+      rotate: -225deg;
+      position: relative;
+      top: 4px;
+      transition: 0.5s;
+    }
+  
+    .barTwo {
+      display: none;
+    }
+  
+    .barThree {
+      position: relative;
+      bottom: 4px;
+      rotate: 225deg;
+      transition: 0.5s;
+    }
+  .blur .Hamburger .bar{
+    background-color: #000000;
+  }
+  }
