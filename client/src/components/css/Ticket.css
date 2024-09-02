@@ -1,0 +1,139 @@
+
+.main_conatiner {
+  min-height: 80vh;
+  background-color: #0C0C0C;
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.booking-ticket {
+  height: 90vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #EEEEEE;
+}
+.selection{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  font-family: "New Amsterdam", sans-serif;
+}
+#time,#movie{
+  background-color: #EEEEEE;
+  width: 10vw;
+  height: 5vh;
+  border: 2px solid #000000;
+  border-radius: 0.2vw;
+  outline: none;
+  text-align: center;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 1vw;
+  cursor: pointer;
+}
+#movie{
+  width: 15vw;
+}
+.seat_selection{
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.seat {
+  width: 2.5vw;
+  height: 5vh;
+  margin: 0.2vw;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.booked {
+  background-color: rgb(94, 87, 87);
+  cursor: not-allowed;
+}
+.available{
+  background-color: #81f364;
+  cursor: pointer;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  font-size: 0.9vw;
+}
+.poll{
+  height: 90vh;
+  width: 0.5%;
+  background-color: #EEEEEE;
+}
+.booking_summary {
+  height: 90vh;
+  width: 29.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #EEEEEE;
+}
+.booking_summary h1{
+  font-size: 1.8vw;
+}
+.summary_info{
+  height: 30vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.summary_info h3{
+  font-size: 1.2vw;
+}
+.summary_info button{
+  height: 6vh;
+  width: 8vw;
+  background-color: #CADCFC;
+  border: none;
+  border-radius: 2vw;
+}
+.not_login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not_image {
+  height: 400px;
+  width: 400px;
+
+}
+
+.not_image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  background-color: inherit;
+  background-blend-mode: color-burn;
+}
+
+.not_login button {
+  width: 100px;
+  background-color: #CADCFC;
+  color: #030b17;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

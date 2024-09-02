@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.loader{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0C0C0C;
+}
+.loader_area{
+    display: flex;
+    justify-content: center;
+}
+.player1{
+    height: 100px;
+}
+.main_home{
+    margin-top: 70px;
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #0C0C0C;
+    overflow: hidden;
+}
+.movie_poster{
+    height: 35vw;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+}
+.slide-content{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    background: #1E201E;
+    background: linear-gradient(90deg, rgb(12, 12, 12) 50%, rgb(13, 13, 13) 67%, rgba(14, 14, 14, 0.8) 87%, rgba(18, 18, 18, 0.056) 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    left:0;
+    
+}
+.title_img{
+    height: 6vw;
+    margin-bottom: 2vw; 
+}
+.title_img img{
+    height:100%;
+    width: 100%;
+    object-fit: contain;
+}
+.slide-content p{
+    width: 80%;
+    line-height: 2.1vw;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.4vw; 
+    text-align: justify;  
+}
+.slide-content a{
+    width: 15vw;
+    margin-top: 2vw;
+    height:3vw;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: #1E201E;
+    border-radius: 5px;
+    gap: 5px;
+    margin-bottom: 3vw;
+    transition: background-color 1s, color 1s;
+    font-weight: bold;
+}
+.slide-content a:hover{
+    background-color: red;
+    color: #EEEEEE;
+}
+.slide-content a::after{
+    transform: translateY(5px);
+}
+.img_cont{
+    width: 70%;
+    height: auto;
+    overflow: hidden;
+}
+.img_cont img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.new_release{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+    color: #E3651D;
+}
+.card_container{
+    margin-top: 30px;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4vw;
+    
+}
+.card_area{
+    height: 470px;
+    width: 280px;
+    color: #0C0C0C;
+    border-radius: 10px 10px 10px 10px;
+}
+.img_area{
+    height: 80%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: transparent;
+}
+.img_area img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+}
+.text_area{
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#EEEEEE;
+    border-radius:0 0 10px 10px;
+}
+.text_area h3{
+    font-weight: bold;
+}
+.bookbtn{
+    margin-top: 5px;
+    height: 35px;
+    width: 120px;
+    border-radius: 5px;
+    border: none;
+    background: rgb(12,12,12);
+background: linear-gradient(45deg, rgba(12,12,12,1) 0%, rgb(68, 68, 68) 100%);
+    color: #EEEEEE;
+    font-size: 1.1vw;
+    cursor: pointer;
+}
+.upcoming{
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.upcoming_container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 4vw;
+}
+.upcoming_container .img_area{
+    height: 80%;
+}
+.upcoming_container .bookbtn{
+    display: none;
+}
+@media (max-width:800px) {
+    .movie_poster{
+        height: 130vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .slider{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .slide-content{
+        height: 70%;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: linear-gradient(0deg, rgb(3, 11, 23) 80%, rgba(3, 12, 31, 0.8) 90%, rgba(3, 13, 23, 0.01) 100%);
+
+    }
+    .img_cont{
+        height: 50%;
+        width: 100%;
+    }
+    .img_cont img{
+        height: auto;
+        width: 100%;
+        object-fit:fill;
+    }
+    .title_img{
+        height: 15vw;
+    }
+    .slide-content p{
+        width: 80%;
+        line-height: 4.2vw;
+        letter-spacing: 1.5px;
+        color: rgb(183, 182, 182);
+        font-family: "Ubuntu", sans-serif;
+        font-size: 3.8vw; 
+        text-align: justify;  
+    }
+    .slide-content a{
+        width: 30vw;
+        margin-top: 2vw;
+        height:9vw;
+        background-color: #CADCFC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 3.6vw;
+    }
+    .card_area{
+        height: 300px;
+        width: 170px;
+    }
+    .img_area{
+        height: 72%;
+        width: 100%;
+    }
+    .text_area h3{
+        font-weight: bold;
+        font-size: 13px;
+    }
+    .bookbtn{
+        margin-top: 5px;
+        height: 35px;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+        font-size: 13px;
+        cursor: pointer;
+    }
+}
